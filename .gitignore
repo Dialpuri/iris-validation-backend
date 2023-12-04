@@ -9,5 +9,4 @@ Makefile
 
 **/*.js
 .idea
-!frontend/src/api/iris-api.js
-!frontend/*.js
+!src/*.js
