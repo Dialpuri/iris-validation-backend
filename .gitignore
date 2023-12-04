@@ -10,3 +10,4 @@ Makefile
 **/*.js
 .idea
 !src/*.js
+CMakeCache.txt

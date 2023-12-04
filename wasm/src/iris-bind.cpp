@@ -28,11 +28,11 @@ MultiResultsBinding calculate(bool multiple_files, std::string mtz_name, std::st
 
     MultiResultsBinding multi_results_binding; 
 
-    CalculatedMetrics calculated_metrics_1 = CalculatedMetrics(metrics, file_name1);
+    CalculatedMetrics calculated_metrics_1 = CalculatedMetrics(metrics, mtz_name, file_name1);
     multi_results_binding.results.push_back(calculated_metrics_1.calculate());
 
     if (multiple_files) {
-      CalculatedMetrics calculated_metrics_2 = CalculatedMetrics(metrics, file_name2);
+      CalculatedMetrics calculated_metrics_2 = CalculatedMetrics(metrics, mtz_name, file_name2);
       multi_results_binding.results.push_back(calculated_metrics_2.calculate());
     }
 

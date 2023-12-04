@@ -125,7 +125,7 @@ enum RunMode
 class CalculatedMetrics
 {
 public:
-    CalculatedMetrics(std::vector<AbstractMetric *> &metrics, const std::string &pdb_path);
+    CalculatedMetrics(std::vector<AbstractMetric *> &metrics, const std::string& mtz_path, const std::string &pdb_path);
 
     ResultsBinding calculate();
 
