@@ -1,0 +1,13 @@
+emsdk
+node_modules
+*.o
+*.a
+CMakeFiles
+checkout
+Makefile
+*.cmake
+
+**/*.js
+.idea
+!frontend/src/api/iris-api.js
+!frontend/*.js

@@ -1,0 +1,9 @@
+{
+    "name": "iris-validation-backend",
+    "version": "0.0.1",
+    "description": "Iris Validation backend",
+    "main": "src/iris-api.js",
+    "files": [
+      "dist/*"
+    ]
+  }
