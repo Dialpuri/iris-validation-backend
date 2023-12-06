@@ -306,10 +306,11 @@ void CalculatedMetrics::load_map()
     file.close_read();
 }
 
-CalculatedMetrics::CalculatedMetrics(std::vector<AbstractMetric *> &metrics, const std::string& mtz_path, const std::string& pdb_path)
+CalculatedMetrics::CalculatedMetrics(std::vector<AbstractMetric *> &metrics, const std::string& pdb_path, const std::string& mtz_path, const std::string& map_path)
 {
     m_pdb_path = pdb_path;
     m_mtz_path = mtz_path;
+    m_map_path = map_path;
 
     m_mode = check_for_files();
     if (m_mode == RunMode::ERROR)
