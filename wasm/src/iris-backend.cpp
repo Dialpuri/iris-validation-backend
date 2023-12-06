@@ -284,7 +284,7 @@ void CalculatedMetrics::load_mtz()
     clipper::HKL_data<clipper::data32::F_phi> fphidata(myhkl, myxtl);
 
     clipper::CCP4MTZfile mtzin;
-    mtzin.open_read("/input.mtz");
+    mtzin.open_read(m_mtz_path);
     mtzin.import_hkl_info(myhkl);
     mtzin.import_hkl_data(fphidata, myset, myxtl, "*/*/[FWT PHWT]");
     mtzin.close_read();
@@ -301,7 +301,7 @@ void CalculatedMetrics::load_mtz()
 void CalculatedMetrics::load_map()
 {
     clipper::CCP4MAPfile file;
-    file.open_read("/input.map");
+    file.open_read(m_map_path);
     file.import_xmap(m_xmap);
     file.close_read();
 }

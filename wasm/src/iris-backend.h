@@ -144,6 +144,6 @@ private:
     RunMode m_mode;
 
     std::string m_pdb_path;
-    std::string m_mtz_path = "/input.mtz";
-    std::string m_map_path = "/input.map";
+    std::string m_mtz_path;
+    std::string m_map_path;
 };
